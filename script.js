@@ -40,3 +40,29 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 Prima di partire a scrivere codice poniamoci qualche domanda:
 Che ci sia un array da qualche parte?
 Se dobbiamo confrontare qualcosa che "cosa" ci serve?*/
+
+// Genera un numero casuale da 1 a 6
+function lanciaDado() {
+    return Math.floor(Math.random() * 6) + 1;
+  }
+  
+// Genera i numeri per il giocatore e il computer
+  const punteggioGiocatore = lanciaDado();
+  const punteggioComputer = lanciaDado();
+  
+// Stampa i punteggi
+  console.log("Punteggio giocatore:", punteggioGiocatore);
+  console.log("Punteggio computer:", punteggioComputer);
+  
+// Determina il vincitore
+  if (punteggioGiocatore > punteggioComputer) {
+    console.log("Il giocatore vince!");
+  } else if (punteggioGiocatore < punteggioComputer) {
+    console.log("Il computer vince!");
+  } else {
+    console.log("Pareggio!");
+  }
+  
+
+
+
